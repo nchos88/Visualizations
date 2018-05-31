@@ -4,14 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b6974378-fb12-4200-ab4d-e504d9b68ca6</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Script\test.py</StartupFile>
+    <StartupFile>Bar_Compare_multi_content_insingleChart.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>Visualization</Name>
     <RootNamespace>Visualization</RootNamespace>
-    <InterpreterId>Global|VisualStudio|TF_Py35</InterpreterId>
+    <InterpreterId>CondaEnv|CondaEnv|tf18</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,6 +23,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Bar_Colors_Complete.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Bar_Compare_multi_content_insingleChart.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Bar_SeperatedColor.py">
@@ -46,7 +49,7 @@
     <Compile Include="Visualization.py" />
   </ItemGroup>
   <ItemGroup>
-    <InterpreterReference Include="Global|VisualStudio|TF_Py35" />
+    <InterpreterReference Include="CondaEnv|CondaEnv|tf18" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Script\" />
